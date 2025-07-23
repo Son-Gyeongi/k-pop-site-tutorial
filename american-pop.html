@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Pop World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body class="american-pop-theme">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">World POP</a>
+            <ul class="nav-links">
+                <li><a href="index.html">K-POP</a></li>
+                <li><a href="jpop.html">J-POP</a></li>
+                <li><a href="american-pop.html" class="active">AMERICAN POP</a></li>
+                <li><a href="spanish-pop.html">SPANISH POP</a></li>
+                <li><a href="music-sites.html">MUSIC SITES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>AMERICAN POP UNIVERSE</h1>
+            <p class="subtitle">Welcome to the Home of Pop Music!</p>
+        </header>
+
+        <section class="intro">
+            <h2>The Magic of American Pop</h2>
+            <p>Powerful beats, catchy melodies, and innovative sounds!
+               American pop music leads global music trends and
+               continues to evolve through the fusion of various genres.</p>
+        </section>
+
+        <section class="popular-groups">
+            <h2>Top Pop Artists</h2>
+            <div class="groups">
+                <div class="group">
+                    <div class="artist-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb6a224073987b930f99adc706" 
+                            alt="Taylor Swift in a glamorous performance outfit">
+                    </div>
+                    <h3>Taylor Swift</h3>
+                    <p>A modern pop icon and ultimate hitmaker.
+                       Dominating global music charts with mega-hits like
+                       'Anti-Hero' and 'Cruel Summer'.</p>
+                </div>
+                <div class="group">
+                    <div class="artist-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb1a7d6eee96c3f0a21cc21b92" 
+                            alt="The Weeknd in his signature red suit">
+                    </div>
+                    <h3>The Weeknd</h3>
+                    <p>A pioneer leading the new era of pop music
+                       with his unique blend of R&B sensibility
+                       and modern pop sound.</p>
+                </div>
+                <div class="group">
+                    <div class="artist-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb7dd3f47f6e23644a3438fce2" 
+                            alt="Olivia Rodrigo in a stylish outfit">
+                    </div>
+                    <h3>Olivia Rodrigo</h3>
+                    <p>Establishing herself as the voice of Gen Z
+                       with powerful vocals and authentic lyrics
+                       that resonate with millions worldwide.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>POP NEWS</h4>
+                    <p>Stay updated with the latest hits and artist activities!
+                       Your daily source for American pop music news.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#intro">About Pop</a></li>
+                        <li><a href="#popular-groups">Top Artists</a></li>
+                        <li><a href="#news">Latest News</a></li>
+                        <li><a href="#events">Concert Info</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 AMERICAN POP UNIVERSE. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                bulletClass: 'swiper-pagination-bullet',
+                bulletActiveClass: 'swiper-pagination-bullet-active',
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '" style="background: ' + 
+                           (className.includes('active') ? '#000000' : 'rgba(0, 0, 0, 1)') + 
+                           '"></span>';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
