@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-POP ワールド</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body class="j-pop-theme">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">World POP</a>
+            <ul class="nav-links">
+                <li><a href="index.html">K-POP</a></li>
+                <li><a href="jpop.html" class="active">J-POP</a></li>
+                <li><a href="american-pop.html">AMERICAN POP</a></li>
+                <li><a href="spanish-pop.html">SPANISH POP</a></li>
+                <li><a href="music-sites.html">MUSIC SITES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>J-POP ユニバース</h1>
+            <p class="subtitle">日本の音楽シーンへようこそ！</p>
+        </header>
+
+        <section class="intro">
+            <h2>J-POPの魅力</h2>
+            <p>洗練されたメロディと独特の音楽性、そして美しいハーモニー！
+               J-POPは日本独自の感性と現代的なサウンドの完璧な調和を見せています。
+               様々なジャンルと個性で世界中のファンの心を掴んでいます。</p>
+        </section>
+
+        <section class="popular-groups">
+            <h2>トップアーティスト</h2>
+            <div class="groups">
+                <div class="group">
+                    <div class="artist-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb4d79fc2e31ea7a03c51f918c" 
+                            alt="YOASOBIのデュオ、イクラとAyase">
+                    </div>
+                    <h3>YOASOBI</h3>
+                    <p>小説を音楽で再解釈するユニークなコンセプトで
+                       日本の音楽シーンを席巻したデュオ。「アイドル」や「夜に駆ける」で
+                       世界的な人気を獲得しています。</p>
+                </div>
+                <div class="group">
+                    <div class="artist-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb8c5dc0f96ccb12d7b0f3eef7" 
+                            alt="Official髭男dismのライブパフォーマンス">
+                    </div>
+                    <h3>Official髭男dism</h3>
+                    <p>心地よいメロディと卓越した歌唱力で
+                       J-POPシーンで独自の位置を確立したバンドです。</p>
+                </div>
+                <div class="group">
+                    <div class="artist-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5ebf6593f32c3829571552f2e97" 
+                            alt="宇多田ヒカルのコンサート写真">
+                    </div>
+                    <h3>宇多田ヒカル</h3>
+                    <p>日本のポップミュージックのレジェンドであり、世界的なアーティストとして
+                       独自の音楽性と実力を認められています。</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>J-POPニュース</h4>
+                    <p>毎日更新される新曲情報からアーティストの最新活動まで！
+                       J-POPのすべての瞬間をここでチェック。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>クイックリンク</h4>
+                    <ul>
+                        <li><a href="#intro">J-POPの魅力</a></li>
+                        <li><a href="#popular-groups">人気アーティスト</a></li>
+                        <li><a href="#news">最新ニュース</a></li>
+                        <li><a href="#events">ライブ情報</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>フォローする</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 J-POP UNIVERSE. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                bulletClass: 'swiper-pagination-bullet',
+                bulletActiveClass: 'swiper-pagination-bullet-active',
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '" style="background: ' + 
+                           (className.includes('active') ? '#000000' : 'rgba(0, 0, 0, 1)') + 
+                           '"></span>';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
