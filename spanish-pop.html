@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pop Latino</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body class="spanish-pop-theme">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">World POP</a>
+            <ul class="nav-links">
+                <li><a href="index.html">K-POP</a></li>
+                <li><a href="jpop.html">J-POP</a></li>
+                <li><a href="american-pop.html">AMERICAN POP</a></li>
+                <li><a href="spanish-pop.html" class="active">SPANISH POP</a></li>
+                <li><a href="music-sites.html">MUSIC SITES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>UNIVERSO POP LATINO</h1>
+            <p class="subtitle">¡Bienvenidos al mundo de la música latina!</p>
+        </header>
+
+        <section class="intro">
+            <h2>La Magia del Pop Latino</h2>
+            <p>¡Ritmos apasionados, melodías emotivas y beats bailables!
+               La música pop latina cautiva a los fans de todo el mundo
+               con su perfecta fusión de sensibilidad latina y sonido moderno.</p>
+        </section>
+
+        <section class="popular-groups">
+            <h2>Artistas Destacados</h2>
+            <div class="groups">
+                <div class="group">
+                    <div class="artist-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb990c18f52df13c0c4facf6f4" 
+                            alt="ROSALÍA en un traje espectacular">
+                    </div>
+                    <h3>ROSALÍA</h3>
+                    <p>Superestrella española que ha conquistado la escena musical global
+                       con su innovadora fusión de flamenco y pop contemporáneo.</p>
+                </div>
+                <div class="group">
+                    <div class="artist-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5ebf5c37f83ad2e2e655293c68c" 
+                            alt="Bad Bunny durante una actuación">
+                    </div>
+                    <h3>Bad Bunny</h3>
+                    <p>Artista que está abriendo una nueva era en la música latina
+                       con su estilo único que combina reggaeton y trap.</p>
+                </div>
+                <div class="group">
+                    <div class="artist-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5ebe7153d0c97749bc94f08fd84" 
+                            alt="Shakira en un traje elegante">
+                    </div>
+                    <h3>Shakira</h3>
+                    <p>Leyenda del pop latino que reina durante décadas
+                       con su voz distintiva y actuaciones incomparables.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>NOTICIAS</h4>
+                    <p>¡Mantente al día con las últimas novedades
+                       de tus artistas latinos favoritos!</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#intro">Sobre Pop Latino</a></li>
+                        <li><a href="#popular-groups">Artistas Top</a></li>
+                        <li><a href="#news">Noticias</a></li>
+                        <li><a href="#events">Conciertos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 UNIVERSO POP LATINO. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                bulletClass: 'swiper-pagination-bullet',
+                bulletActiveClass: 'swiper-pagination-bullet-active',
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '" style="background: ' + 
+                           (className.includes('active') ? '#000000' : 'rgba(0, 0, 0, 1)') + 
+                           '"></span>';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
